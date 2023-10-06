@@ -1,0 +1,109 @@
+ul {
+  list-style-type: none;
+  padding: 1px;
+}
+
+h1 {
+  text-align: center;
+  color: yellow;
+  -webkit-text-stroke: 1px #008CBA;
+  padding: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  padding: 5px;
+  margin: 5px 0;
+
+}
+
+.item {
+  flex: 1;
+}
+
+button {
+  background-color: #0c9600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 100px;
+  padding: 5px;
+  margin-right: 1px;
+  display: inline-block;
+}
+
+.edit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.edit-section h3 {
+  text-align: center;
+}
+
+.edit-section input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.edit-section button.edit-button,
+.edit-section button.cancel-button {
+  background-color: #cd0e0e;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.edit-section button.save-button {
+  background-color: #0eae13;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.edit-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-button {
+  background-color: #cd0e0e;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}

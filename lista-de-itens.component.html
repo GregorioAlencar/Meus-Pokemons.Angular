@@ -1,0 +1,46 @@
+<div>
+
+  <h1>Lista de Pokemons</h1>
+
+  <div class="sticky-header">
+
+    <h3>Adicionar Pokemon</h3>
+
+    <div>
+      <input [(ngModel)]="novoPokemon.nome" placeholder="Nome do Pokemon">
+      <input [(ngModel)]="novoPokemon.tipo" placeholder="Tipo do Pokemon">
+      <button class="add-button" (click)="adicionarPokemon()">Adicionar</button>
+    </div>
+
+  </div>
+
+  <div class="edit-section" *ngIf="editandoPokemon">
+
+    <h3>Editar Pokemon</h3>
+
+    <div>
+      <input [(ngModel)]="editandoPokemon.nome" placeholder="Nome">
+      <input [(ngModel)]="editandoPokemon.tipo" placeholder="Tipo">
+      <button class="save-button" (click)="salvarEdicao()">Salvar</button>
+      <button class="cancel-button" (click)="cancelarEdicao()">Cancelar</button>
+    </div>
+
+  </div>
+
+  <div>
+    
+    <ul>
+      
+      <li *ngFor="let pokemon of pokemons">
+        
+        <span>{{ pokemon.nome }} - {{ pokemon.tipo }}</span>
+        <button class="edit-button" (click)="editarPokemon(pokemon)">Editar</button>
+        <button class="delete-button" (click)="excluirPokemon(pokemon)">Excluir</button>
+
+      </li>
+
+    </ul>
+
+  </div>
+  
+</div>
